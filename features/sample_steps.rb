@@ -30,4 +30,5 @@ end
  
 Then('I should get first produce name as {string}') do |expected|
   expect(@prod_name.class).to eq(expected.class)
+  $driver.quit
 end
