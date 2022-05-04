@@ -18,7 +18,7 @@ end
  
 When('Text is searched, where type is {string}') do |type|
   @prod_name = ""
-  sleep(2)
+  sleep(3)
   if type=='1'
     prod_xpath = '//div[@class="_4rR01T"]'
     @prod_name = $driver.find_element(:xpath, prod_xpath).text
